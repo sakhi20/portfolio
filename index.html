@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakhi Patel</title>
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/landing.css" />
+</head>
+<body>
+
+  <!-- Page transition overlay -->
+  <div class="page-overlay" id="page-overlay"></div>
+
+  <!-- Status bar -->
+  <header class="status-bar">
+    Raleigh, NC &nbsp;·&nbsp; MS CS @ NC State &nbsp;·&nbsp; Open to Internships &amp; New Grad Roles
+  </header>
+
+  <!-- Main content -->
+  <main class="landing-main">
+    <h1 class="landing-name" id="landing-name">Sakhi Patel</h1>
+    <p class="landing-subtitle" id="landing-subtitle">Data Scientist &nbsp;·&nbsp; Artist</p>
+
+    <nav class="landing-nav" id="landing-nav">
+      <a
+        href="./lab.html"
+        class="landing-nav-link"
+        id="link-lab"
+        data-dest="lab"
+      >Enter the Lab</a>
+      <a
+        href="./studio.html"
+        class="landing-nav-link"
+        id="link-studio"
+        data-dest="studio"
+      >Enter the Studio</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <a href="mailto:sakhipatel20@gmail.com">sakhipatel20@gmail.com</a>
+    <a href="https://linkedin.com/in/sakhipatel20/" target="_blank" rel="noopener">linkedin.com/in/sakhipatel20/</a>
+    <a href="https://github.com/sakhi20" target="_blank" rel="noopener">github.com/sakhi20</a>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="./js/landing.js"></script>
+</body>
+</html>
