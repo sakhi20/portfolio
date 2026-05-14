@@ -1,66 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sakhi Patel</title>
-
-  <!-- Preload fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    rel="preload"
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/landing.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakhi Patel — Data Scientist & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Page transition overlay -->
-  <div class="page-overlay" id="page-overlay"></div>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-monogram">SP</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="art.html" class="nav-art">Art →</a>
+    </div>
+  </nav>
 
-  <!-- Status bar -->
-  <header class="status-bar">
-    Raleigh, NC &nbsp;·&nbsp; MS CS @ NC State &nbsp;·&nbsp; Open to Internships &amp; New Grad Roles
-  </header>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle hero-bg-circle--2"></div>
+    <div class="hero-content">
+      <h1 class="hero-name">Sakhi Patel</h1>
+      <p class="hero-tagline">Data Scientist. ML Engineer. Artist.</p>
+      <p class="hero-subtitle">I find patterns in data and beauty in everything else.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="art.html" class="btn btn-secondary">See My Art →</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Main content -->
-  <main class="landing-main">
-    <h1 class="landing-name" id="landing-name">Sakhi Patel</h1>
-    <p class="landing-subtitle" id="landing-subtitle">Data Scientist &nbsp;·&nbsp; Artist</p>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="about-inner">
+      <div class="about-deco" aria-hidden="true">
+        <span class="about-numeral">I</span>
+      </div>
+      <div class="about-text">
+        <p class="about-edu">
+          <strong>MS Computer Science (Data Science)</strong><br>
+          NC State University &middot; Aug 2025 &ndash; May 2027<br>
+          <span class="subtle">Coursework: Machine Learning, Neural Networks, DBMS</span>
+        </p>
+        <p class="about-para">Beyond tech: trained visual artist, Gujarat State Board Drawing Exams (Distinction), national art competition awards including All-India Camel Colour Contest.</p>
+        <blockquote class="pullquote">&ldquo;Equally comfortable building a neural network and painting a portrait.&rdquo;</blockquote>
+      </div>
+    </div>
+  </section>
 
-    <nav class="landing-nav" id="landing-nav">
-      <a
-        href="./lab.html"
-        class="landing-nav-link"
-        id="link-lab"
-        data-dest="lab"
-      >Enter the Lab</a>
-      <a
-        href="./studio.html"
-        class="landing-nav-link"
-        id="link-studio"
-        data-dest="studio"
-      >Enter the Studio</a>
-    </nav>
-  </main>
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="section-label">
+      <span>EXPERIENCE</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <h3>Data Analyst Intern</h3>
+        <span class="exp-company">Bhavi Technologies, India</span>
+        <span class="exp-date">Jun &ndash; Jul 2024</span>
+      </div>
+      <ul class="exp-list">
+        <li>SQL ETL pipeline across <span class="stat">5+</span> data sources &rarr; <span class="stat">40%</span> latency reduction</li>
+        <li><span class="stat">2</span> Power BI + <span class="stat">1</span> Tableau dashboard, <span class="stat">15+</span> KPIs, adopted by <span class="stat">3</span> business units in <span class="stat">1</span> month</li>
+        <li>Reporting errors reduced by <span class="stat">30%</span></li>
+      </ul>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="landing-footer">
-    <a href="mailto:sakhipatel20@gmail.com">sakhipatel20@gmail.com</a>
-    <a href="https://linkedin.com/in/sakhipatel20/" target="_blank" rel="noopener">linkedin.com/in/sakhipatel20/</a>
-    <a href="https://github.com/sakhi20" target="_blank" rel="noopener">github.com/sakhi20</a>
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="section-label">
+      <span>PROJECTS</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>GenoCompress AI</h3>
+          <span class="project-date">Jan &ndash; May 2025</span>
+        </div>
+        <p class="project-stack">TensorFlow &middot; PyTorch &middot; NumPy &middot; scikit-learn</p>
+        <ul class="project-points">
+          <li><span class="stat">18.9&times;</span> compression on 500K+ genomic sequences (<span class="stat">6&times;</span> over GZIP)</li>
+          <li><span class="stat">92.3%</span> accuracy</li>
+        </ul>
+        <a href="https://github.com/sakhi20/GenoCompress-AI" target="_blank" rel="noopener" class="project-gh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>AI Suspicious Activity Detection</h3>
+          <span class="project-date">Sep &ndash; Dec 2024</span>
+        </div>
+        <p class="project-stack">YOLOv8 &middot; OpenCV &middot; Python</p>
+        <ul class="project-points">
+          <li><span class="stat">25 FPS</span> real-time processing</li>
+          <li><span class="stat">87%</span> precision / <span class="stat">85%</span> mAP@0.5</li>
+          <li>Led <span class="stat">3</span>-person team</li>
+        </ul>
+        <a href="https://github.com/sakhi20/AI-Powered-Suspicious-Activity-Detection-System-Using-Computer-Vision" target="_blank" rel="noopener" class="project-gh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>LLM Data Dashboard</h3>
+          <span class="project-date">2025</span>
+        </div>
+        <p class="project-stack">LLM &middot; Python &middot; Data Visualization</p>
+        <ul class="project-points">
+          <li>Natural-language interface for querying and visualizing datasets</li>
+          <li>Bridges the gap between raw data and non-technical stakeholders</li>
+        </ul>
+        <a href="https://github.com/sakhi20/llm-data-dashboard" target="_blank" rel="noopener" class="project-gh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>Student Stress Prediction</h3>
+          <span class="project-date">2024</span>
+        </div>
+        <p class="project-stack">Python &middot; scikit-learn &middot; ML</p>
+        <ul class="project-points">
+          <li>Predictive model identifying stress indicators in student populations</li>
+          <li>Classification pipeline with feature analysis and model evaluation</li>
+        </ul>
+        <a href="https://github.com/sakhi20/Student-Stress-Prediction" target="_blank" rel="noopener" class="project-gh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.87 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>Disaster Response — Label-Efficient ML</h3>
+          <span class="project-date">2024</span>
+        </div>
+        <p class="project-stack">Python &middot; NLP &middot; Semi-supervised Learning</p>
+        <ul class="project-points">
+          <li>Label-efficient approach to classifying disaster response messages</li>
+          <li>Maximizes accuracy with minimal labeled training data</li>
+        </ul>
+        <a href="https://github.com/sakhi20/disaster-response-label-efficient" target="_blank" rel="noopener" class="project-gh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <h3>Business Analytics Portfolio</h3>
+          <span class="project-date">May &ndash; Jul 2024</span>
+        </div>
+        <p class="project-stack">SQL &middot; Python &middot; Excel</p>
+        <ul class="project-points">
+          <li><span class="stat">8+</span> projects across HR / finance / social media</li>
+          <li>Staffing model cut abandonment rate <span class="stat">30% &rarr; 10%</span></li>
+          <li>Queried <span class="stat">50K+</span> Instagram profiles</li>
+        </ul>
+        <a href="https://github.com/sakhi20/Data-Analytics-Portfolio" target="_blank" rel="noopener" class="project-gh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section-label">
+      <span>SKILLS</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="skills-groups">
+      <div class="skill-group reveal">
+        <span class="skill-group-label">Languages</span>
+        <div class="skill-tags">
+          <span>Python</span><span>SQL</span><span>R</span><span>Java</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <span class="skill-group-label">ML &amp; AI</span>
+        <div class="skill-tags">
+          <span>TensorFlow</span><span>PyTorch</span><span>XGBoost</span><span>YOLOv8</span><span>NLP</span><span>OpenCV</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <span class="skill-group-label">Statistics</span>
+        <div class="skill-tags">
+          <span>Regression</span><span>Classification</span><span>Feature Engineering</span><span>Predictive Modeling</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <span class="skill-group-label">BI &amp; Viz</span>
+        <div class="skill-tags">
+          <span>Power BI</span><span>Tableau</span><span>Matplotlib</span><span>Seaborn</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <span class="skill-group-label">Tools</span>
+        <div class="skill-tags">
+          <span>Git</span><span>Docker</span><span>AWS</span><span>Jupyter</span><span>Google Colab</span><span>Microsoft Fabric</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & AWARDS -->
+  <section class="section certs" id="certs">
+    <div class="section-label">
+      <span>CERTIFICATIONS &amp; AWARDS</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="certs-grid">
+      <div class="certs-col reveal">
+        <h4 class="certs-col-title">Certifications</h4>
+        <ul class="certs-list">
+          <li>ML Pipelines with Azure ML Studio <span class="cert-src">Coursera</span></li>
+          <li>Intro to NLP <span class="cert-src">Infosys</span></li>
+          <li>Data Analytics &amp; Visualization <span class="cert-src">Accenture</span></li>
+          <li>Data Analytics Specialization <span class="cert-src">Trainity</span></li>
+          <li>Intro to Data Science <span class="cert-src">Infosys</span></li>
+        </ul>
+      </div>
+      <div class="certs-divider" aria-hidden="true"></div>
+      <div class="certs-col reveal">
+        <h4 class="certs-col-title">Awards</h4>
+        <ul class="certs-list">
+          <li>NSO Rank 1 &mdash; school &amp; city (Grade 7)</li>
+          <li>IMO &mdash; multiple school-level ranks</li>
+          <li>Beanstalk Math Olympiad &mdash; Rank 1 (school, city, national)</li>
+          <li>All-India Camel Colour Contest &mdash; multiple national awards</li>
+          <li>Gujarat State Board Drawing Exams &mdash; Distinction</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section leadership" id="leadership">
+    <div class="section-label">
+      <span>LEADERSHIP</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="leadership-items">
+      <div class="leadership-item reveal">
+        <span class="leadership-role">Subcommittee</span>
+        <span class="leadership-org">Society of Mathematics, PDEU</span>
+        <span class="leadership-date">2021&ndash;2022</span>
+      </div>
+      <div class="leadership-item reveal">
+        <span class="leadership-role">Subcommittee</span>
+        <span class="leadership-org">Envirofreaks Environment Club, PDEU</span>
+        <span class="leadership-date">2022&ndash;2023</span>
+      </div>
+      <div class="leadership-item reveal">
+        <span class="leadership-role">Volunteer</span>
+        <span class="leadership-org">Visamo Kids NGO &mdash; taught literacy &amp; numeracy</span>
+        <span class="leadership-date">Jun&ndash;Jul 2022</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <h2 class="contact-heading">Let&rsquo;s build something.</h2>
+      <a href="mailto:sakhipatel20@gmail.com" class="contact-email">sakhipatel20@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/sakhipatel20/" target="_blank" rel="noopener" class="contact-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sakhi20" target="_blank" rel="noopener" class="contact-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+      <p class="contact-note">Currently based in Raleigh, NC. Open to internships and collaborations.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Designed by Sakhi Patel &middot; 2025</span>
+    <a href="art.html" class="footer-art">Art Portfolio &rarr;</a>
   </footer>
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="./js/landing.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
